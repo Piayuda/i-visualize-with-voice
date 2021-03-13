@@ -1,2 +1,29 @@
-# i-visualize-with-voice
-I visualise with voice  Updated 5 minutes ago Il consiste à aider les personnes aveugles ou du moins mal voyantes(les enfants) a pouvoir apprendre comme les autres élèves en utilisant les nouvelles technologies donc la solution était de créer une application mobile capable d'inter agir avec l'aveugle en Lisant les données inscrites sur l'écran. En étant capable de reconnaître les paroles de la personne pour transcrire sur l'appareil tout en s'adaptant a la langue, l'accent la voix....
+# Text-To-Speech Tools
+
+This monorepository includes tools to convert text of any size to speech:
+
+* [Command-line interface (CLI) tool](packages/tts-cli) to convert text to speech
+* [Web TTS CLI tool](packages/web-tts) to convert webpages to speech
+
+These tools require an account with at least one of these (paid) services:
+
+* [Amazon Web Services](https://aws.amazon.com) for [AWS Polly](https://aws.amazon.com/polly/)
+* [Google Cloud Platform](https://cloud.google.com) for [GCP Text-to-Speech](https://cloud.google.com/text-to-speech/)
+
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/tts-cli)](https://snyk.io/vuln/npm:tts-cli)
+[![Build Status](https://img.shields.io/travis/eheikes/tts)](https://travis-ci.org/github/eheikes/tts)
+[![Dependencies](https://img.shields.io/david/eheikes/tts)](https://david-dm.org/eheikes/tts)
+[![Coverage](https://img.shields.io/codecov/c/gh/eheikes/tts?token=9bd5731ce1a34766bdf3d780a648fa05)](https://codecov.io/gh/eheikes/tts)
+[![License](https://img.shields.io/github/license/eheikes/tts)](https://github.com/eheikes/tts/blob/master/LICENSE.txt)
+        
+## Contributing
+
+Pull requests and suggestions are welcome. [Create a new issue](https://github.com/eheikes/tts/issues/new) to report a bug or suggest a new feature.
+
+Development commands:
+
+```
+npx lerna bootstrap   # download the project dependencies
+lerna run lint        # lint code
+lerna run test        # run tests
+```
